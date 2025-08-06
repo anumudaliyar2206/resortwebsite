@@ -1,0 +1,755 @@
+@charset "utf-8";
+/* CSS Document */
+/*!
+ * custom grid
+ */
+ @media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1064px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}
+ .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+ 	position:relative;min-height:1px;padding-left:15px;padding-right:15px;
+ 	/*-ms-flex-preferred-size: 0;
+	flex-basis: 0;
+	-ms-flex-positive: 1;
+	flex-grow: 1;*/
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666666%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666666%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666666%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666666%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666666%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666666%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666666%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666666%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666666%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666666%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666666%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666666%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666666%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666666%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666666%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666666%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666666%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666666%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666666%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666666%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666666%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666666%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666666%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666666%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666666%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666666%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666666%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666666%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666666%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666666%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666666%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666666%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:1064px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666666%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666666%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666666%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666666%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666666%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666666%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666666%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666666%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666666%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666666%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666666%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666666%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666666%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666666%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666666%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666666%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666666%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666666%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666666%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666666%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666666%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666666%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666666%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666666%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666666%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666666%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666666%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666666%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666666%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666666%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666666%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666666%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important;visibility:hidden !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}
+
+
+
+
+body .pac-container{border-radius:0 0 4px 4px;box-shadow:none;border:1px solid #eee;border-top:0;box-sizing:content-box;margin-top:-2px;z-index:1005!important;}.main-search-input .pac-container{left:0!important;top:54px!important} #autocomplete-input{position:relative;z-index:5}  , #autocomplete-input a {z-index:101}.pac-logo:after { display:none}
+.pac-item{cursor:pointer;padding:8px 6px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;text-align:left;border-top:1px solid #eee;font-size:11px;color:#999;border-radius:6px}.pac-matched{font-weight:400}.pac-item-query{font-size:13px;padding-right:3px;color:#999}.pac-item:hover,.pac-item:hover .pac-icon:before,.pac-item:hover .pac-item-query{color:#fff}.pac-icon{width:15px;height:20px;margin-right:7px;display:inline-block;vertical-align:top;background:0 0;position:relative}.pac-icon:before{position:absolute;font-family:Font Awesome\ 5 Pro;content:"\f3c5";top:-6px;left:4px;font-size:14px}
+
+
+
+/*************************************************************************************************/
+/* Global - Base                                         */
+/*************************************************************************************************/
+.lweather-widget {
+  border-radius:10px;
+  overflow:hidden;
+  border:1px solid #eee;
+}
+@font-face {
+  font-family: 'weathericons';
+  src: url('../fonts/weathericons-regular-webfont.eot');
+  src: url('../fonts/weathericons-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/weathericons-regular-webfont.woff') format('woff'), url('../fonts/weathericons-regular-webfont.ttf') format('truetype'), url('../fonts/weathericons-regular-webfont.svg#weathericons-regular-webfontRg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wi:before, .wi:after  {
+  display: inline-block;
+  font-family: 'weathericons';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.flatWeatherPlugin {
+  font-size: inherit;
+  width: 100%;
+}
+
+.flatWeatherPlugin p, .flatWeatherPlugin h2, .flatWeatherPlugin h3, .flatWeatherPlugin ul,  .flatWeatherPlugin li {
+  padding: 0;
+  margin: 0;
+  color: inherit;
+}
+
+#flatWeatherLoading.loading {
+  font-size: 90px;
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+  -webkit-animation:spin 2s linear infinite;
+  -moz-animation:spin 2s linear infinite;
+  animation:spin 2s linear infinite;
+  opacity: 0.2;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.flatWeatherPlugin h2 {
+  padding:35px 0 25px;
+  color:#fff;
+  font-weight:800;
+  text-align:left;
+  padding-left:30px;
+
+  font-size:14px;
+}
+
+.flatWeatherPlugin .wiToday {
+  width: 100%;
+  float:left;
+  position:relative;
+  z-index:1;
+
+
+}
+.flatWeatherPlugin .wiToday:before , .flatWeatherPlugin .wiToday:after {
+  content:'';
+  position:absolute;
+  bottom:-150px;
+  right:-60px;
+  width:200px;
+  height:200px;
+  background:#fff;
+  border-radius:100%;
+  z-index:-1;
+  opacity:0.2;
+}
+.flatWeatherPlugin .wiToday:after {
+
+  bottom:20px;
+  right: inherit;
+  left:-200px;
+  width:300px;
+  height:300px;
+
+
+  z-index:-2;
+  opacity:0.2;
+}
+.flatWeatherPlugin .wiToday > .wiIconGroup {
+  float: right;
+  width: calc(100% - 130px);
+  text-align: center;
+  position:relative;
+}
+
+.flatWeatherPlugin .wiToday > .wiIconGroup p {
+  width: 100%;
+  color: #fff;
+  position:relative;
+  z-index:10;
+  text-align:left;
+  top:81px;
+
+
+  line-height: 1em;
+  padding: 0;
+}
+
+
+.flatWeatherPlugin .wiToday .wiIconGroup div.wi {
+  font-size:110px;
+  line-height: 1.45em;
+  width: 100%;
+  font-weight:100;
+  position:absolute;
+  right:-60px;
+  top:-70px;
+  color: rgba(255,255,255,0.21);
+
+}
+
+.flatWeatherPlugin .wiToday .wiIconGroup div.wi:before {
+  vertical-align: text-bottom;
+    -webkit-box-reflect: below -20px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.7)))
+}
+
+.flatWeatherPlugin .clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.flatWeatherPlugin div.wiToday > p.wiTemperature {
+  font-size: 500%;
+  line-height: 1.45em;
+  float: left;
+  width: 130px;
+  text-align: left;
+  padding-left:30px;
+  color: inherit;
+  position:relative;
+  top:-14px;
+  color:#fff;
+}
+
+.flatWeatherPlugin sup {
+  opacity: 0.7;
+  font-size: 65%;
+  vertical-align: baseline;
+  top: -0.5em;
+  position: relative;
+}
+
+.flatWeatherPlugin .wiDetail {
+  width: 100%;
+  float:left;
+  padding:0 30px;
+  margin-bottom:10px;
+  position:relative;
+  top:-15px;
+
+
+}
+.flatWeatherPlugin .wiDetail ul li{
+  color:#fff;
+  font-weight:400;
+
+}
+.flatWeatherPlugin.today .wiDetail {
+  padding-top: 10px;
+}
+
+.flatWeatherPlugin .wiDetail  p.wiDay {
+
+  margin: 5px 0 2px 0;
+  text-align: left;
+  color: inherit;
+  position:relative;
+  top:-20px;
+
+  font-weight:600;
+  color:#fff;
+}
+
+
+
+.flatWeatherPlugin .wiDetail ul {
+  width: 33%;
+  float: left;
+  list-style: none;
+  font-size: 90%;
+}
+.flatWeatherPlugin .wiDetail ul li {
+  text-align:left;
+  float:left;
+  width:100%;
+  margin-bottom:4px;
+}
+.flatWeatherPlugin .wiDetail ul + ul {
+  width: 27%;
+}
+
+.flatWeatherPlugin .wiDetail ul + ul + ul {
+  width: 40%;
+}
+
+.flatWeatherPlugin .wiDetail ul li:before {
+  width:30px;
+
+}
+.humidity {
+  display:none;
+}
+.flatWeatherPlugin ul.wiForecasts{
+  width: 100%;
+  overflow: hidden;
+  margin-top:10px;
+  background:#fff;
+  padding:15px 30px;
+  z-index:2;
+  position:relative;
+}
+
+.flatWeatherPlugin ul.wiForecasts li > span {
+  width: 25%;
+  display: inline-block;
+  position:relative;
+  top:4px;
+  color:#666;
+}
+
+.flatWeatherPlugin ul.wiForecasts li {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  display: inline;
+   padding:5px 0;
+     color:#000;
+   font-weight:700;
+}
+
+.flatWeatherPlugin ul.wiForecasts ul.wiForecast {
+  font-weight: normal;
+  list-style: none;
+  float: right;
+  width: 75%;
+}
+
+.flatWeatherPlugin.forecast ul.wiForecasts ul.wiForecast li {
+  text-align: center;
+}
+
+.flatWeatherPlugin ul.wiForecasts ul.wiForecast li {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+.wiDay span {
+  text-align:left;
+}
+.flatWeatherPlugin ul.wiForecasts ul.wiForecast li.wi:before {
+  vertical-align: bottom;
+}
+
+.flatWeatherPlugin ul.wiForecasts li.wiDay {
+  font-weight: bold;
+  border-color: inherit;
+
+  padding: 5px 0;
+}
+
+.flatWeatherPlugin.forecast ul.wiForecasts li.wiDay {
+  border-bottom: 1px solid RGBA(255,255,255,0.2);
+  border-top: none;
+}
+
+.flatWeatherPlugin ul.wiForecasts li.wiDay:last-child {
+  border-bottom: none;
+}
+
+
+/*************************************************************************************************/
+/* Font mappings                                                                                 */
+/*************************************************************************************************/
+
+/***************************
+General
+****************************/
+.wi.sunrise:before {
+  content: "\f051";
+}
+
+.wi.sunset:before {
+  content: "\f052";
+}
+
+.wi.wind:before {
+  content: "\f050";
+}
+
+.wi.humidity:before {
+  content: "\f04e";
+}
+
+.wi.pressure:before {
+  content: "\f040";
+}
+
+.wi.cloudiness:before {
+  content: "\f041";
+}
+
+.wi.temperature.metric:after {
+  content: "\f03c";
+}
+
+.wi.temperature.imperial:after {
+  content: "\f045";
+}
+
+.wi.loading:after {
+  content: "\f04c";
+}
+
+/***************************
+Thunderstorm
+****************************/
+
+/* thunderstorm with light rain */
+.wi.wi200:before {
+  content: "\f01d";
+}
+
+/* thunderstorm with rain */
+.wi.wi201:before {
+  content: "\f01d";
+}
+
+/* thunderstorm with heavy rain */
+.wi.wi202:before {
+  content: "\f01e";
+}
+
+/* light thunderstorm */
+.wi.wi210:before {
+  content: "\f010";
+}
+
+/* thunderstorm */
+.wi.wi211:before {
+  content: "\f01e";
+}
+
+/* heavy thunderstorm */
+.wi.wi212:before {
+  content: "\f01e";
+}
+
+/* ragged thunderstorm */
+.wi.wi221:before {
+  content: "\f016";
+}
+
+/* thunderstorm with light drizzle */
+.wi.wi230:before {
+  content: "\f01d";
+}
+
+/* thunderstorm with drizzle */
+.wi.wi231:before {
+  content: "\f01d";
+}
+
+/* thunderstorm with heavy drizzle */
+.wi.wi232:before {
+  content: "\f01d";
+}
+
+/***************************
+Drizzle
+****************************/
+
+/* light intensity drizzle */
+.wi.wi300:before {
+  content: "\f01c";
+}
+
+/* drizzle */
+.wi.wi301:before {
+  content: "\f01c";
+}
+
+/* heavy intensity drizzle */
+.wi.wi302:before {
+  content: "\f01c";
+}
+
+/* light intensity drizzle rain */
+.wi.wi310:before {
+  content: "\f01c";
+}
+
+/* drizzle rain */
+.wi.wi311:before {
+  content: "\f017";
+}
+
+/* heavy intensity drizzle rain */
+.wi.wi312:before {
+  content: "\f017";
+}
+
+/* shower rain and drizzle */
+.wi.wi313:before {
+  content: "\f01a";
+}
+
+/* heavy shower rain and drizzle */
+.wi.wi314:before {
+  content: "\f01a";
+}
+
+/* shower drizzle */
+.wi.wi321:before {
+  content: "\f01a";
+}
+
+/***************************
+Rain
+****************************/
+
+/* light rain */
+.wi.wi500:before {
+  content: "\f01a";
+}
+
+/* moderate rain */
+.wi.wi501:before {
+  content: "\f017";
+}
+
+/* heavy intensity rain */
+.wi.wi502:before {
+  content: "\f019";
+}
+
+/* very heavy rain */
+.wi.wi503:before {
+  content: "\f019";
+}
+
+/* extreme rain */
+.wi.wi504:before {
+  content: "\f018";
+}
+
+/* freezing rain */
+.wi.wi511:before {
+  content: "\f015";
+}
+
+/* light intensity shower rain */
+.wi.wi520:before {
+  content: "\f01a";
+}
+
+/* shower rain */
+.wi.wi521:before {
+  content: "\f01a";
+}
+
+/* heavy intensity shower rain */
+.wi.wi522:before {
+  content: "\f01a";
+}
+
+/* ragged shower rain */
+.wi.wi531:before {
+  content: "\f01a";
+}
+
+/***************************
+Snow
+****************************/
+
+/* light snow */
+.wi.wi600:before {
+  content: "\f01b";
+}
+
+/* snow */
+.wi.wi601:before {
+  content: "\f01b";
+}
+
+/* heavy snow */
+.wi.wi602:before {
+  content: "\f01b";
+}
+
+/* sleet */
+.wi.wi611:before {
+  content: "\f015";
+}
+
+/* shower sleet */
+.wi.wi612:before {
+  content: "\f015";
+}
+
+/* light rain and snow */
+.wi.wi615:before {
+  content: "\f017";
+}
+
+/* rain and snow */
+.wi.wi616:before {
+  content: "\f017";
+}
+
+/* light shower snow */
+.wi.wi620:before {
+  content: "\f017";
+}
+
+/* shower snow */
+.wi.wi621:before {
+  content: "\f017";
+}
+
+/* heavy shower snow */
+.wi.wi622:before {
+  content: "\f017";
+}
+
+/***************************
+Atmosphere
+****************************/
+
+/* mist */
+.wi.wi701:before {
+  content: "\f014";
+}
+
+/* smoke */
+.wi.wi711:before {
+  content: "\f062";
+}
+
+/* haze */
+.wi.wi721:before {
+  content: "\f014";
+}
+
+/* sand, dust whirls */
+.wi.wi731:before {
+  content: "\f063";
+}
+
+/* fog */
+.wi.wi741:before {
+  content: "\f014";
+}
+
+/* sand */
+.wi.wi751:before {
+  content: "\f063";
+}
+
+/* dust */
+.wi.wi761:before {
+  content: "\f063";
+}
+
+/* volcanic ash */
+.wi.wi762:before {
+  content: "\f063";
+}
+
+/* squalls */
+.wi.wi771:before {
+  content: "\f050";
+}
+
+/* tornado */
+.wi.wi781:before {
+  content: "\f056";
+}
+
+/***************************
+Clouds
+****************************/
+
+/* clear sky */
+.wi.wi800:before {
+  content: "\f00d";
+}
+
+/* few clouds */
+.wi.wi801:before {
+  content: "\f002";
+}
+
+/* scattered clouds */
+.wi.wi802:before {
+  content: "\f002";
+}
+
+/* broken clouds */
+.wi.wi803:before {
+  content: "\f002";
+}
+
+/* overcast clouds */
+.wi.wi804:before {
+  content: "\f00c";
+}
+
+/***************************
+Extreme
+****************************/
+
+/* tornado */
+.wi.wi900:before {
+  content: "\f056";
+}
+
+/* tropical storm */
+.wi.wi901:before {
+  content: "\f073";
+}
+
+/* hurricane */
+.wi.wi902:before {
+  content: "\f073";
+}
+
+/* cold */
+.wi.wi903:before {
+  content: "\f076";
+}
+
+/* hot */
+.wi.wi904:before {
+  content: "\f072";
+}
+
+/* windy */
+.wi.wi905:before {
+  content: "\f050";
+}
+
+/* hail */
+.wi.wi906:before {
+  content: "\f015";
+}
+
+/***************************
+Additional
+****************************/
+
+/* calm */
+.wi.wi951:before {
+  content: "\f00d";
+}
+
+/* light breeze */
+.wi.wi952:before {
+  content: "\f021";
+}
+
+/* gentle breeze */
+.wi.wi953:before {
+  content: "\f021";
+}
+
+/* moderate breeze */
+.wi.wi954:before {
+  content: "\f021";
+}
+
+/* fresh breeze */
+.wi.wi955:before {
+  content: "\f021";
+}
+
+/* strong breeze */
+.wi.wi956:before {
+  content: "\f050";
+}
+
+/* high wind, near gale */
+.wi.wi957:before {
+  content: "\f050";
+}
+
+/* gale */
+.wi.wi958:before {
+  content: "\f050";
+}
+
+/* severe gale */
+.wi.wi959:before {
+  content: "\f073";
+}
+
+/* storm */
+.wi.wi960:before {
+  content: "\f073";
+}
+
+/* violent storm */
+.wi.wi961:before {
+  content: "\f073";
+}
+
+/* hurricane */
+.wi.wi962:before {
+  content: "\f073";
+}
+.wiDay{
+  padding-bottom:12px;
+}
+.astronomy li {
+  text-align:left;
+}
