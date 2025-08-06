@@ -1,0 +1,6 @@
+                                          Resort
+ home
+about
+contact
+booking
+gallery
